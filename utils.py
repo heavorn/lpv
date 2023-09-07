@@ -125,7 +125,7 @@ def get_args(is_train=True):
                         help='select training data (default is MJ-ST, which means MJ and ST used as training data)')
     parser.add_argument('--batch_ratio', type=str, default='0.5-0.5',
                         help='assign ratio for each selected data in the batch')
-    parser.add_argument('--total_data_usage_ratio', type=str, default='1.0',
+    parser.add_argument('--total_data_usage_ratio', type=str, default='0.25',
                         help='total data usage ratio, this ratio is multiplied to total number of data.')
     parser.add_argument('--max_length', type=int, default=25, help='maximum-label-length')
     parser.add_argument('--imgH', type=int, default=32, help='the height of the input image')
